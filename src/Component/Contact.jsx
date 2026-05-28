@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import contactImage from "../assets/images/avertercontact.png";
 
 const Contact = ({ darkMode }) => {
   const form = useRef();
@@ -68,7 +69,7 @@ const Contact = ({ darkMode }) => {
             animate={{ rotate: [0, 10, -15, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
             viewport={{ once: false }}
-            src="/src/assets/images/avertercontact.png"
+            src={contactImage}
             alt="Contact Image"
             className="w-4/5 md:w-3/6 mx-auto relative z-10"
           />

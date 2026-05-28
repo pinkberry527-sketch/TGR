@@ -7,6 +7,12 @@ import {
   FaArrowLeft,
   FaArrowRight,
 } from "react-icons/fa";
+import screenshotPortfolio from "../assets/images/screencapture-portfolio-website-gamma-orcin-19-vercel-app-2026-05-21-19_50_35.png";
+import screenshotDailyChoice from "../assets/images/screencapture-my-daily-choice-vercel-app-2026-05-21-19_47_25.png";
+import screenshotZiba from "../assets/images/screencapture-ziba-real-estate-website-vercel-app-HTML-index-html-2026-05-21-19_46_07.png";
+import screenshotMovies from "../assets/images/screencapture-movies-net-zeta-vercel-app-2026-05-21-19_51_30.png";
+import screenshotWeather from "../assets/images/screencapture-weather-app-zeta-swart-63-vercel-app-2026-05-21-19_53_32.png";
+import screenshotTodo from "../assets/images/screencapture-to-do-app-tau-brown-vercel-app-2026-05-21-19_52_37.png";
 
 const Projects = ({ darkMode }) => {
   const projects = [
@@ -14,8 +20,7 @@ const Projects = ({ darkMode }) => {
       title: "Portfolio Website",
       description:
         "A personal portfolio built with React and Tailwind CSS showcasing my skills and projects.",
-      image:
-        "/src/assets/images/screencapture-portfolio-website-gamma-orcin-19-vercel-app-2026-05-21-19_50_35.png",
+      image: screenshotPortfolio,
       tech: ["HTML", "CSS", "JS"],
       live: "https://portfolio-website-gamma-orcin-19.vercel.app/",
       code: "https://github.com/pinkberry527-sketch/portfolio-website.git",
@@ -25,8 +30,7 @@ const Projects = ({ darkMode }) => {
       title: "E-Commerce UI",
       description:
         "A modern e-commerce interface with clean product layout and responsive design.",
-      image:
-        "/src/assets/images/screencapture-my-daily-choice-vercel-app-2026-05-21-19_47_25.png",
+      image: screenshotDailyChoice,
       tech: ["React", "UI Design", "Tailwind CSS"],
       live: "https://my-daily-choice.vercel.app/",
       code: "https://github.com/pinkberry527-sketch/My-daily-choice-.git",
@@ -36,8 +40,7 @@ const Projects = ({ darkMode }) => {
       title: "Landing Page Design",
       description:
         "A high-converting landing page designed for a fictional tech product.",
-      image:
-        "/src/assets/images/screencapture-ziba-real-estate-website-vercel-app-HTML-index-html-2026-05-21-19_46_07.png",
+      image: screenshotZiba,
       tech: ["HTML", "CSS", "JS"],
       live: "https://ziba-real-estate-website.vercel.app/",
       code: "https://github.com/pinkberry527-sketch/ziba-real-estate-website.git",
@@ -47,8 +50,7 @@ const Projects = ({ darkMode }) => {
       title: "Movie Search engine UI",
       description:
         "A modern movie search interface with sleek design, cards, and responsive layout.",
-      image:
-        "/src/assets/images/screencapture-movies-net-zeta-vercel-app-2026-05-21-19_51_30.png",
+      image: screenshotMovies,
       tech: ["HTML", "CSS", "JS"],
       live: "https://movies-net-zeta.vercel.app/",
       code: "https://github.com/pinkberry527-sketch/Movies-net.git",
@@ -58,8 +60,7 @@ const Projects = ({ darkMode }) => {
       title: "Weather App UI",
       description:
         "A mobile-first weather application interface designed for smooth UX.",
-      image:
-        "/src/assets/images/screencapture-weather-app-zeta-swart-63-vercel-app-2026-05-21-19_53_32.png",
+      image: screenshotWeather,
       tech: ["HTML", "CSS", "JS", "API"],
       live: "https://weather-app-zeta-swart-63.vercel.app/",
       code: "https://github.com/pinkberry527-sketch/Weather-App.git",
@@ -69,8 +70,7 @@ const Projects = ({ darkMode }) => {
       title: "To-Do List App UI",
       description:
         "A clean and minimal to-do list interface designed for simplicity and usability.",
-      image:
-        "/src/assets/images/screencapture-to-do-app-tau-brown-vercel-app-2026-05-21-19_52_37.png",
+      image: screenshotTodo,
       tech: ["HTML", "CSS", "JS"],
       live: "https://to-do-app-tau-brown.vercel.app/",
       code: "https://github.com/pinkberry527-sketch/To-do-app.git",

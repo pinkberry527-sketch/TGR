@@ -1,5 +1,6 @@
 import { FaGithub, FaTiktok, FaLinkedinIn } from "react-icons/fa";
 import { motion } from "framer-motion";
+import portfolioImage from "../assets/images/portfolioaverter1.png";
 
 const Hero = ({ darkMode }) => {
   return (
@@ -125,8 +126,8 @@ const Hero = ({ darkMode }) => {
             repeat: Infinity,
             ease: "easeInOut",
           }}
-          className="w-3/5 float-right relative z-10"
-          src="/src/assets/images/portfolioaverter1.png"
+          className="w-4/5 md:w-3/5 mx-auto relative z-10"
+          src={portfolioImage}
           alt=""
         />
 

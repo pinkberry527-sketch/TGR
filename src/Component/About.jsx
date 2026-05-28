@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import aboutImage from "../assets/images/averter2.png";
 
 const About = ({ darkMode }) => {
   return (
@@ -23,7 +24,7 @@ const About = ({ darkMode }) => {
               ease: "easeInOut",
             }}
             className="w-4/5 md:w-3/5 relative z-10"
-            src="/src/assets/images/averter2.png"
+            src={aboutImage}
             alt=""
           />
         </motion.div>
