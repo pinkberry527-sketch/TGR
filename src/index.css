@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-zilla: "Zilla Slab", serif;
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 764px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+
+:root {
+  --primary: #588b8b;
+  --secondary: #ffd5c2;
+  --accent: #f28f3b;
+  --hover: #c8553d;
+  --bg_light: #f5f5f5;
+  --bg_dark: #1a0f2a;
+  --text_color_light: #333;
+  --text_color_dark: #fff;
+  --gray: #2d2d34;
+  --headingfont: 'Poppins', sans-serif;
+  --bodyfont: 'Roboto', sans-serif;
+  --titlefont: 'Zilla Slab', serif;
+}
+
+html, body {
+  font-family: var(--bodyfont);
+  background-color: var(--bg_light);
+  color: var(--text_color_light);
+  transition: background-color 300ms, color 300ms;
+   scroll-behavior: smooth;
+}
+
+html.dark, body.dark {
+  background-color: var(--bg_dark);
+  color: var(--text_color_dark);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-delay {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float 6s ease-in-out infinite;
+}
