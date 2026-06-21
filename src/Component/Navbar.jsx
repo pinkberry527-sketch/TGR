@@ -8,6 +8,14 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     setDarkMode(!darkMode);
   };
 
+  
+    const handleclick =()=>{
+       const phoneNumber= "2349011242117"
+    let message ="Hello ruth:\n\n";
+     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappURL, "_blank");
+    }
+
   const navstyling = `p-2 font-bold text-sm font-[var(--headingfont)] transition-colors duration-200 ${
     darkMode
       ? "text-[var(--text_color_dark)] hover:text-[var(--hover)]"
@@ -147,7 +155,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               </a>
             </li>
             <li className="pt-2">
-              <button className="w-full font-[var(--font-zilla)] bg-[var(--accent)] text-white font-medium py-2 px-4 rounded-full hover:bg-[var(--hover)] transition-all">
+              <button onClick={handleclick} className="w-full font-[var(--font-zilla)] bg-[var(--accent)] text-white font-medium py-2 px-4 rounded-full hover:bg-[var(--hover)] transition-all">
                 Hire Me
               </button>
             </li>
