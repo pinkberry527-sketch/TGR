@@ -96,6 +96,13 @@ const Contact = ({ darkMode }) => {
               className="p-4 rounded-xl bg-[var(--secondary)] border border-white/10
                 outline-none text-gray-800 placeholder:text-gray-500"
             />
+             <input
+              type="phone number"
+              name="user_phone_number"
+              placeholder="your phone number"
+              className="p-4 rounded-xl bg-[var(--secondary)] border border-white/10
+                outline-none text-gray-800 placeholder:text-gray-500"
+            />
             <textarea
               rows="6"
               name="message"

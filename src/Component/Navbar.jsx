@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaRegMoon, FaRegSun, FaBars, FaTimes } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa6";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,13 +9,12 @@ const Navbar = ({ darkMode, setDarkMode }) => {
     setDarkMode(!darkMode);
   };
 
-  
-    const handleclick =()=>{
-       const phoneNumber= "2349011242117"
-    let message ="Hello ruth:\n\n";
-     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  const handleclick = () => {
+    const phoneNumber = "2349011242117";
+    let message = "Hello ruth:\n\n";
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappURL, "_blank");
-    }
+  };
 
   const navstyling = `p-2 font-bold text-sm font-[var(--headingfont)] transition-colors duration-200 ${
     darkMode
@@ -85,8 +85,11 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             </button>
 
             {/* Hire Me Desktop Button */}
-            <button className="hidden md:block font-[var(--font-zilla)] bg-[var(--accent)] text-white font-medium py-2 px-4 rounded-full hover:bg-[var(--hover)] hover:scale-105 transition-all">
-              Hire Me
+            <button
+              onClick={handleclick}
+              className="hidden md:block font-[var(--font-zilla)] bg-green-500 text-white font-medium py-2 px-4 rounded-full hover:bg-[var(--hover)] hover:scale-105 transition-all"
+            >
+             <FaWhatsapp className="w-10 h-10" />
             </button>
 
             {/* Hamburger Toggle Button (Mobile) */}
@@ -155,8 +158,11 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               </a>
             </li>
             <li className="pt-2">
-              <button onClick={handleclick} className="w-full font-[var(--font-zilla)] bg-[var(--accent)] text-white font-medium py-2 px-4 rounded-full hover:bg-[var(--hover)] transition-all">
-                Hire Me
+              <button
+                onClick={handleclick}
+                className="w-full font-[var(--font-zilla)] bg-[var(--accent)] text-white font-medium py-2 px-4 rounded-full hover:bg-[var(--hover)] transition-all"
+              >
+               <FaWhatsapp />
               </button>
             </li>
           </ul>

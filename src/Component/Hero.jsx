@@ -52,7 +52,7 @@ const Hero = ({ darkMode }) => {
           transition={{ delay: 0.5 }}
           className="text-lg text-[var(--primary)] font-bold font-[var(--bodyfont)]"
         >
-          Frontend Developer & UI/UX Designer
+          website Developer & UI/UX Designer
         </motion.span>
 
         {/* Description */}
